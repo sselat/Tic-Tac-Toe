@@ -1,0 +1,91 @@
+    * {
+        font-family: 'Press Start 2P', cursive;
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background-color: rgb(193, 218, 226);
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 30px;
+        text-transform: uppercase;
+        text-shadow: -1px 2px 1px white;
+    }
+
+    #tabuleiro {
+        margin: 50px auto;
+        background-image: radial-gradient(black 70%, rgba(255, 255, 255, 0)50%);
+        height: 360px;
+        width: 360px;
+        border-radius: 30px;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.199);
+    }
+
+    table,
+    tr {
+        border-radius: 30px;
+    }
+
+    td {
+        height: 33%;
+        width: 33%;
+        background-color: rgb(245, 245, 245);
+        transition: .2s;
+    }
+
+    td:hover {
+        filter: brightness(90%);
+    }
+
+    #area1 {
+        border-top-left-radius: 15px;
+    }
+
+    #area3 {
+        border-top-right-radius: 15px;
+    }
+
+    #area7 {
+        border-bottom-left-radius: 15px;
+    }
+
+    #area9 {
+        border-bottom-right-radius: 15px;
+    }
+
+    .circulo {
+        background-image: url(Green_circle.png);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position: center;
+    }
+
+    .xis {
+        background-image: url(red-cross.png);
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-position: center;
+    }
+    #res{
+        transition: 1s;
+    }
+    #res>p{
+        text-align: center;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        height: 50px;
+    }
+    #botao{
+        display: block;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: auto;
+        height: 50px;
+        width: 200px;
+    }
+    
