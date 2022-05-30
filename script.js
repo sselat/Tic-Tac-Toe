@@ -29,8 +29,18 @@ function verificar() {
     linha1 = linhas[0].children
     linha2 = linhas[1].children
     linha3 = linhas[2].children
-
-    if (linha1[0].getAttribute('class') != null && linha1[0].getAttribute('class') == linha1[1].getAttribute('class') && linha1[0].getAttribute('class') == linha1[2].getAttribute('class')) {
+    if (linha1[0].getAttribute('class') != undefined &&
+        linha1[1].getAttribute('class') != undefined &&
+        linha1[2].getAttribute('class') != undefined &&
+        linha2[0].getAttribute('class') != undefined &&
+        linha2[1].getAttribute('class') != undefined &&
+        linha2[2].getAttribute('class') != undefined &&
+        linha3[0].getAttribute('class') != undefined &&
+        linha3[1].getAttribute('class') != undefined &&
+        linha3[2].getAttribute('class') != undefined) {
+        finalizar('velha')
+    }
+    else if (linha1[0].getAttribute('class') != null && linha1[0].getAttribute('class') == linha1[1].getAttribute('class') && linha1[0].getAttribute('class') == linha1[2].getAttribute('class')) {
         if (linha1[0].getAttribute('class') == 'circulo') {
             finalizar('circulo')
         }
@@ -94,15 +104,19 @@ function verificar() {
             finalizar('xis')
         }
     }
+
 }
 function finalizar(classe) {
     fimdejogo = true
     let tipo = classe;
     let res = document.getElementById('res')
-    if (tipo == 'circulo') {
+    if(tipo == 'velha') {
+        res.innerHTML = "<p>Deu velha 😥</p>"
+    }
+    else if (tipo == 'circulo') {
         res.innerHTML = "<p>O vencedor foi o <strong id='jogador1' style='color: green;'>Jogador 1</strong>!</p>"
     }
-    else {
+    else if (tipo == 'xis'){
         res.innerHTML = "<p>O vencedor foi o <strong id='jogador2' style='color: red;'>Jogador 2</strong>!</p>"
     }
     res.innerHTML += '<input type="button" value="Jogar Novamente" id="botao"></input>'
