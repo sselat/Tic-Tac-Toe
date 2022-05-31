@@ -2,6 +2,7 @@
         --cor1: #d3f1d3;
         --cor2: pink;
     }
+    
     * {
         font-family: 'Press Start 2P', cursive;
         padding: 0;
@@ -103,4 +104,10 @@
         height: 20px;
         color: green;
         text-shadow: 1px 1px 1px white;
+    }
+    #creditos{
+        font-family: sans-serif;
+        font-size: .6em;
+        font-style: italic;
+        text-align: center;
     }
