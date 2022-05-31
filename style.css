@@ -1,3 +1,7 @@
+    :root{
+        --cor1: #d3f1d3;
+        --cor2: pink;
+    }
     * {
         font-family: 'Press Start 2P', cursive;
         padding: 0;
@@ -6,6 +10,7 @@
 
     body {
         background-color: rgb(193, 218, 226);
+        
     }
 
     h1 {
@@ -14,6 +19,7 @@
         text-transform: uppercase;
         text-shadow: -1px 2px 1px white;
         font-size: 1.5em;
+        
     }
 
     #tabuleiro {
@@ -23,6 +29,7 @@
         width: 360px;
         border-radius: 30px;
         box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.199);
+        
     }
 
     table,
@@ -43,6 +50,7 @@
 
     #area1 {
         border-top-left-radius: 15px;
+        
     }
 
     #area3 {
