@@ -21,7 +21,7 @@ function clicou(area) {
         jogador *= -1
         verificar()
     }
-
+    jogada()
 }
 
 function verificar() {
@@ -127,4 +127,21 @@ function finalizar(classe) {
     botao.addEventListener('click', () => {
         location.reload()
     })
+}
+
+function jogada() {
+    let jogadorVez = document.getElementById('vez')
+    if (fimdejogo != true) {
+        if (jogador == 1) {
+            jogadorVez.innerHTML = "Vez do jogador 1"
+            jogadorVez.style = "color: green; text-shadow: 1px 1px 1px white;"
+        }
+        else {
+            jogadorVez.innerHTML = "Vez do jogador 2"
+            jogadorVez.style = "color: crimson; text-shadow: 1px 1px 1px white;"
+        }
+    }
+    else {
+        jogadorVez.innerHTML = ''
+    }
 }

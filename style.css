@@ -88,4 +88,10 @@
         height: 50px;
         width: 200px;
     }
-    
+    #vez{
+        margin: 30px auto -20px;
+        text-align: center;
+        height: 20px;
+        color: green;
+        text-shadow: 1px 1px 1px white;
+    }
